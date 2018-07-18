@@ -1,0 +1,18 @@
+.item-user{
+  width: 80%;
+  border: 1px solid #6a96ff;
+  border-radius: 3px;
+  background-color: #6383c7;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 5px;
+
+  margin:0 auto 5px auto;
+}
+span{
+  height: 5px;
+  border-radius: 50%;
+  background-color: #18b318;
+  z-index: 1;
+  padding-left: 24px;
+}

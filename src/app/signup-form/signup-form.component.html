@@ -1,0 +1,49 @@
+<div class="m-d-login">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="d-login">
+
+      <div class="logo">Sign Up to chat</div>
+      <div class="d-input"
+      [ngClass]="{'has-error':form.get('name').invalid && form.get('name').touched}"
+      >
+        <input type="text" placeholder="User name"
+        formControlName="name"
+        >
+      </div>
+      <span *ngIf="form.get('name').invalid && form.get('name').touched">Поля не можеть быт пустим</span>
+
+      <div class="d-input "
+      [ngClass]="{'has-error':form.get('email').invalid && form.get('email').touched }"
+      >
+        <input type="email" placeholder="Email"
+        formControlName="email"
+        >
+      </div>
+      <span *ngIf="form.get('email').invalid && form.get('email').touched">
+          <span *ngIf="form.get('email')['errors']['required']">Email не может быт пустим</span>
+          <span *ngIf="form.get('email')['errors']['email']">Введите коректный E-mail</span>
+      </span>
+
+      <div class="d-input"
+           [ngClass]="{'has-error':form.get('password').invalid && form.get('password').touched }">
+
+        <input type="password" placeholder="Password"
+        formControlName="password"
+        ></div>
+      <span class="form-help-text" *ngIf="form.get('password').invalid && form.touched">
+      <span *ngIf="form.get('password')['errors']['required']">Пароль не может быт пустим</span>
+      <span *ngIf="form.get('password')['errors']['minlength'] && form.get('password')['errors']['minlength']['requiredLength']">
+      Пароль должен быт больше
+        <!--   получает входяшие параметр метода =6-->
+        {{form.get('password')['errors']['minlength']['requiredLength'] }}.
+        символов.Сейчас
+         {{ form.get('password')['errors']['minlength']['actualLength']}}
+      </span>
+      </span>
+      <div>
+        <button type="submit" [disabled]="form.invalid" [ngClass]="{'disabled': form.invalid}">Registration</button>
+      </div>
+
+    </div>
+  </form>
+</div>

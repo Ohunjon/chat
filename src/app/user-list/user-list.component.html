@@ -1,0 +1,4 @@
+
+<div  *ngFor="let users of UsersOnline | async" class="On-users"  >
+  <app-user-item [Users]="users"></app-user-item>
+</div>

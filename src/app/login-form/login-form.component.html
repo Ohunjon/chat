@@ -1,0 +1,29 @@
+<div class="m-d-login">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="d-login">
+
+      <div class="logo">Login to chat</div>
+      <div class="d-input"
+      [ngClass]="{'has-error': form.get('email').invalid && form.get('email').touched}"
+      >
+        <input type="email" placeholder="Email" id="login-email"
+        formControlName="email"
+        >
+      </div>
+      <span *ngIf="form.get('email').invalid && form.get('email').touched">Кое что неверно</span>
+      <div class="d-input"
+           [ngClass]="{'has-error': form.get('password').invalid && form.get('password').touched}"
+      ><input type="password" placeholder="Password"
+      formControlName="password"
+      ></div>
+      <span *ngIf="form.get('password').invalid && form.get('password').touched">Введите пароль</span>
+      <div>
+        <button type="submit"
+          [disabled]="form.invalid" [ngClass]="{'disabled': form.invalid}"
+        >Log In</button>
+      </div>
+      <a [routerLink]="'/signup'">Registrtion</a>
+    </div>
+
+  </form>
+</div>

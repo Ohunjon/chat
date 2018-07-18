@@ -1,0 +1,20 @@
+.messageContainer{
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: ghostwhite;
+  margin-bottom: 15px;
+}
+.messageData{
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+  font-size: 13px;
+  width: 20%;
+  border-right: 1px solid #ccc;
+}
+.sender {
+  font-weight: bold;
+}

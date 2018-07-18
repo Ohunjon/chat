@@ -1,0 +1,16 @@
+ul{
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+ul li{
+  list-style: none;
+}
+ul li a{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 15px;
+}

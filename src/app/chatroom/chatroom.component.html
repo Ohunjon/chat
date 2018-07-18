@@ -1,0 +1,12 @@
+<div class="mainContainer">
+  <div class="userListWrapper">
+    <app-user-list></app-user-list>
+  </div>
+  <div #scroller class="feedWrapper">
+  <app-feed [newMessages]="newMessage"></app-feed>
+  </div>
+
+</div>
+<div class="chatFormWrapper">
+  <app-chat-form (addedMessage)="newMessageAdded($event)"></app-chat-form>
+</div>

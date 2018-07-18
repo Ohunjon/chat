@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "username": "Администратор",
+      "status": false
+    },
+    {
+      "email": "Ohun@mail.ru",
+      "password": "123456",
+      "username": "User",
+      "status": true,
+      "id": 3
+    },
+    {
+      "email": "ohun@mail.ru",
+      "password": "1234567",
+      "username": "newuser",
+      "status": true,
+      "id": 4
+    },
+    {
+      "email": "ohun@mail.ru",
+      "password": "adasasdas",
+      "username": "dsadasas",
+      "status": true,
+      "id": 5
+    },
+    {
+      "email": "pkp@mail.ru",
+      "password": "asdadada",
+      "username": "wewqewq",
+      "status": true,
+      "id": 6
+    },
+    {
+      "email": "eeeeeeee@mail.ru",
+      "password": "123456",
+      "username": "1111111",
+      "status": true,
+      "id": 7
+    },
+    {
+      "email": "on@mil.ru",
+      "password": "123456",
+      "username": "ohun",
+      "status": true,
+      "id": 8
+    },
+    {
+      "email": "oj@mail.ru",
+      "password": "qwertty",
+      "username": "new user",
+      "status": true,
+      "id": 9
+    }
+  ],
+  "messages": [
+    {
+      "message": "hello i am ohunjon",
+      "timeSent": "2018/6/25 16:30:41",
+      "uid": 1,
+      "id": 24
+    },
+    {
+      "message": "how are you",
+      "timeSent": "2018/6/25 16:34:22",
+      "uid": 1,
+      "id": 25
+    },
+    {
+      "message": "jkkjkjdfdgdfg",
+      "timeSent": "2018/7/6 4:50:12",
+      "uid": 1,
+      "id": 26
+    },
+    {
+      "message": "eerfrerfre",
+      "timeSent": "2018/7/6 4:50:12",
+      "uid": 1,
+      "id": 27
+    },
+    {
+      "message": "hi all of you",
+      "timeSent": "2018/7/6 4:51:22",
+      "uid": 1,
+      "id": 28
+    }
+  ]
+}

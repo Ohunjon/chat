@@ -1,0 +1,25 @@
+.mainContainer{
+  display: flex;
+  flex-direction: row;
+  height: 530px;
+}
+.userListWrapper{
+  border: 1px solid #333;
+  width: 20%;
+  background-color: #befab1;
+  padding: 10px 0;
+}
+.feedWrapper {
+  width: 80%;
+  border: 1px solid #333;
+  margin: 0;
+  padding: 0;
+}
+.chatFormWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  height: 50px;
+}
